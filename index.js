@@ -16,6 +16,14 @@ password = 'Autumn2021',
 }
 const client = mqtt.connect('mqtt://mqtt0.bast-dev.ru')
 
+const obj = {
+    pol1 = 20,
+    pol2 ='xbit',
+    pol3 ='mi stradaem',
+    pol4 =10000,
+    pol5 ='dfpmh',
+};
+
 app.listen(PORT, () => {
   console.log("server has been started");
 });
