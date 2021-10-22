@@ -1,19 +1,27 @@
-import serv from "./serverdata.js";
+import serv from "../serverdata.js";
 
-let jsonData = { foo: "bar", id: 42 };
+const data = serv;
+let formattedJson = JSON.stringify(serv, null, 4);
 let fan1 = () => {
-  let formattedJson = JSON.stringify(jsonData, null, 4);
   //document.body.innerHTML += `<pre>${formattedJson}</pre>`;
-  $("#temp-air").text(jsonData.foo);
+  $("#temp-air").text(serv.x);
 };
 
-let fan2 = () => {};
+let fan2 = () => {
+  $("#temp-ground").text(serv.pol2);
+};
 
-let fan3 = () => {};
+let fan3 = () => {
+  $("#air-humidity").text(serv.pol3);
+};
 
-let fan4 = () => {};
+let fan4 = () => {
+  $("#soil-moisture").text(serv.pol4);
+};
 
-let fan5 = () => {};
+let fan5 = () => {
+  $("#illumination").text(serv.pol5);
+};
 $("#button-temp-air").bind("click", fan1);
 $("#button-temp-ground").bind("click", fan2);
 $("#button-air-humidity").bind("click", fan3);
