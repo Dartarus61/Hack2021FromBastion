@@ -1,22 +1,20 @@
-import express from "express";
-import path from "path";
-import fs from "fs";
+const express = require('express')
+const fs = require('fs')
+const initDB = require('./db.js')
+const MetricsService = require('./services/metrics.service.js')
+const metricsRouter = require('./routes/metrics.controller.js')
+const typesRouter = require('./routes/types.controller.js')
 
-const app = express();
-const __dirname = path.resolve();
-const PORT = process.env.PORT ?? 3000;
+initDB().then(() => MetricsService.register())
 
-app.use(express.static(path.resolve(__dirname, "script")));
+const app = express()
+const PORT = process.env.PORT || 3000
 
-app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "index.html"));
-});
-app.get("/script/script_for_front.js", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "script", "script_for_front.js"));
-});
-app.get("/serverdata.js", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "serverdata.js"));
-});
+app.use(express.static('public'))
+
+app.use('/metrics', metricsRouter)
+app.use('/types', typesRouter)
+
 app.listen(PORT, () => {
-  console.log("server has been started");
-});
+    console.log('server has been started')
+})
