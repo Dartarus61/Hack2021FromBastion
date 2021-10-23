@@ -21,31 +21,3 @@ client.on("connect", () => {
     console.log(topic, value.toString());
   });
 });
-
-// client.on("connect", function () {
-//   console.log("client connected");
-//   client.subscribe(
-//     "service/weather_logger/outdoor_temperature",
-//     (err, granted) => {
-//       if (err) {
-//         console.error(err, "||", granted);
-//       }
-//       client.on("message", (topic, message) => {
-//         console.log(message.toString());
-//       });
-//       client.end();
-//     }
-//   );
-// });
-// client.on("message", function (topic_prefix, message) {
-//   // message is Buffer
-//   console.log(message.toString());
-//   client.end();
-// });
-// // export default obj = {
-//   x: 1,
-//   pol2: "xbit",
-//   pol3: "mi stradaem",
-//   pol4: 10000,
-//   pol5: "dfpmh",
-// };

@@ -1,13 +1,10 @@
 import express from "express";
 import path from "path";
 import fs from "fs";
-import mqtt from "mqtt";
-import { client } from "./serverdata.js";
 
 const app = express();
 const __dirname = path.resolve();
 const PORT = process.env.PORT ?? 3000;
-let bdata = client;
 
 app.use(express.static(path.resolve(__dirname, "script")));
 
