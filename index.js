@@ -8,7 +8,9 @@ const typesRouter = require('./routes/types.controller.js')
 initDB().then(() => MetricsService.register())
 
 const app = express()
-const PORT = process.env.PORT || 3003
+
+const PORT = process.env.PORT || 3000
+
 
 app.use(express.static('public'))
 
