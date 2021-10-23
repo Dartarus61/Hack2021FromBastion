@@ -1,0 +1,10 @@
+GET http://localhost:3000/metrics HTTP/1.1
+
+
+###
+
+GET http://localhost:3000/metrics/outdoor_humidity HTTP/1.1
+
+###
+
+GET http://localhost:3000/types HTTP/1.1
