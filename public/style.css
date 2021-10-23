@@ -2,89 +2,88 @@
     margin: 0;
     padding: 0;
 }
+body{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/1620856425_6-phonoteka_org-p-teplitsa-fon-8.jpg) no-repeat;
+    background-size: cover;
+}
 
 .container{
-    padding: 7px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    
 }
 
 .header{
-    display: flex;
-    align-items: center;
+    text-align: center;
 }
 
 img{
     height: auto;
-    width: 5%;
+    width: 10%;
 }
 
-.main{
+.main{ 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex: 5 1 300px;
-    padding-top: 20px;
-    
 }
 
-.menu{
+.main_left{
     display: flex;
     flex-direction: column;
     width: 30%;
     
-    
 }
 
-.menu_item{
+.main_right{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    flex-shrink: 1;
-    flex-grow: 1;
-    
+    flex-direction: column;
+    width: 40%;
+    border-radius: 5px;
 }
 
-.menu_img{
-    height: 100%;
-    width: 15%;
-    padding-left: 10px;
-}
-
-.menu_text{
-    display: inline-block;
-  color: white;
-  padding: .5em 2em;
-  border-width: 2px 0;
-  border-style: solid none;
-  border-color: #FDBE33 #000 #D77206;
-  border-radius: 6px;
-  background: linear-gradient(#F3AE0F, #E38916) #E38916;
-  transition: 0.2s;
-  width: 100%;
-  text-align: center;
-  justify-content: flex-start;
-}
-
-.menu_text:hover{
-    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
-}
-
-.data{
+.btn{
+    width: 100%;
+    height: 70vh;
+    color: white;
     display: flex;
-    border: 1px solid black;
-    margin-top: 5px;
-    height: 5vh;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
 }
 
-.display{
-    width: 68%;    
+.warninig{
+    width: 100%;
+    height: 30vh;
+    color: white;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
 .graf{
-    display: flex;
-    border: 1px solid black;
-    margin-top: 5px;
-    height: 40vh;
+    width: 100%;
+    height: 70vh;
+    color: white;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.history{
+    color: white;
+    width: 100%;
+    height: 30vh;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.btn_img{
+    height: 20%;
+    width: auto;
+
 }
