@@ -2,40 +2,88 @@
 <head>
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-
-    <!-- Температура воздуха -->
-    <div class="forma">
-        <p id="temp-air"></p>
-        <button id="button-temp-air">Температуру воздуха </button>
+    <div class="container">
+        <div class="header">
+            <img src="./style/img/ПандаПодПрикрытием.png" alt="">
+            <p  style="text-align: end; vertical-align: middle; width: 47%;">Теплица Самара</p>
+        </div>
+        <div class="main">
+            <div class="display">
+                <!-- Блоки под меню -->
+                <div id="1" style="display: none;">
+                    <div class="data">
+                        <p class="label"></p>
+                        <p class="text_data">1</p>
+                        <button class="btn_up">dfsfd</button>
+                        <button class="btn_down">dffsd</button>
+                    </div>
+                    <div class="graf"></div>
+                </div>
+                <div id="2" style="display: none;">
+                    <div class="data">
+                        <p class="label"></p>
+                        <p class="text_data">2</p>
+                        <button class="btn_up">dfsfd</button>
+                        <button class="btn_down">dffsd</button>
+                    </div>
+                    <div class="graf"></div>
+                </div>
+                <div id="3" style="display: none;">
+                    <div class="data">
+                        <p class="label"></p>
+                        <p class="text_data">3</p>
+                        <button class="btn_up">dfsfd</button>
+                        <button class="btn_down">dffsd</button>
+                    </div>
+                    <div class="graf"></div>
+                </div>
+                <div id="4" style="display: none;">
+                    <div class="data">
+                        <p class="label"></p>
+                        <p class="text_data">4</p>
+                        <button class="btn_up">dfsfd</button>
+                        <button class="btn_down">dffsd</button>
+                    </div>
+                    <div class="graf"></div>
+                </div>
+                <div id="5" style="display: none;">
+                    <div class="data">
+                        <p class="label"></p>
+                        <p class="text_data">5</p>
+                        <button class="btn_up">dfsfd</button>
+                        <button class="btn_down">dffsd</button>
+                    </div>
+                    <div class="graf"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu_item">
+                    <p class="menu_text" id="button-temp-air">Температуру воздуха</p>
+                    <img class="menu_img" id="button-temp-air-img" src="./style/img/температура воздух.png" alt="">
+                </div>
+                <div class="menu_item">
+                    <p class="menu_text" id="button-temp-ground">Температуру грунта</p>
+                    <img class="menu_img" id="button-temp-ground-img" src="./style/img/температура земля.png" alt="">
+                </div>
+                <div class="menu_item">
+                    <p class="menu_text" id="button-air-humidity">Влажность воздуха</p>
+                    <img class="menu_img" id="button-air-humidity-img" src="./style/img/ВлажностьВоздуха.png" alt="">
+                </div>
+                <div class="menu_item">
+                    <p class="menu_text" id="button-soil-moisture">Влажность почвы около корней</p>
+                    <img class="menu_img" id="button-soil-moisture-img" src="./style/img/ВлажностьПочвы.png" alt="">
+                </div>
+                <div class="menu_item">
+                    <p class="menu_text" id="button-illumination">Освещенность</p>
+                    <img class="menu_img" id="button-illumination-img" src="./style/img/Освещение.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Температуру грунта -->
-    <div class="forma">
-        <p id="temp-ground"></p>
-        <button id="button-temp-ground">Температуру грунта</button>
-    </div> 
-
-    <!-- Влажность воздуха -->
-    <div class="forma">
-        <p id="air-humidity"></p>
-        <button id="button-air-humidity">Влажность воздуха</button>
-    </div>
-
-    <!-- Влажность почвы -->
-    <div class="forma">
-        <p id="soil-moisture"></p>
-        <button id="button-soil-moisture">Влажность почвы около корней</button>
-    </div> 
-
-    <!-- Освещенность -->
-    <div class="forma">
-        <p id="illumination"></p>
-        <button id="button-illumination">Освещенность</button>
-    </div>
-    <script type="module" src="./script/script_for_front.js"></script>
+    
+    <script  src="./script/script_for_front.js"></script>
 </body>
 </html>
